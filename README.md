@@ -409,15 +409,23 @@ no_win:
 #### Three Normal Cases
 __Normal Test Case 1__
 Player X wins horizontally
+<img width="705" height="676" alt="Screenshot 2026-10-17 at 12 47 35" src="https://github.com/user-attachments/assets/5a6ce77f-5ec4-4848-be04-b096bb20024b" />
 
+<img width="547" height="262" alt="Screenshot 2026-10-17 at 12 52 19" src="https://github.com/user-attachments/assets/dd4be9e8-3754-479f-aba0-fe185376c228" />
 
+<img width="700" height="407" alt="Screenshot 2026-10-17 at 12 47 52" src="https://github.com/user-attachments/assets/5369eac8-5d92-49ac-a9d4-2f38dceb9fa7" />
 
 __Normal Test Case 2__
 Player O wins vertically
+<img width="705" height="672" alt="Screenshot 2026-10-17 at 12 51 01" src="https://github.com/user-attachments/assets/946be572-ab4b-4769-aebc-9b91b7c3d354" />
 
+<img width="619" height="300" alt="Screenshot 2026-10-17 at 12 51 18" src="https://github.com/user-attachments/assets/4aee1e73-6b66-4e98-9613-86cda827e34f" />
+
+<img width="696" height="408" alt="Screenshot 2026-10-17 at 12 50 49" src="https://github.com/user-attachments/assets/5e93425a-7c33-4565-8e12-4edac0f53a8d" />
 
 __Normal Test Case 3__
 Game ends in a tie
+
 
 
 
