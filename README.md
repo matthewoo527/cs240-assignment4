@@ -367,6 +367,14 @@ no_win:
 
 ```
 
+### Screenshots of the graphic display
+<img width="680" height="415" alt="Screenshot 2026-10-16 at 22 43 33" src="https://github.com/user-attachments/assets/6fe4dff0-8120-4fd6-b118-3a31718e51bf" />
+<img width="828" height="633" alt="Screenshot 2026-10-16 at 22 43 45" src="https://github.com/user-attachments/assets/dbd5a3bc-93c0-492f-a1be-daf6c6d4c3cc" />
+<img width="687" height="419" alt="Screenshot 2026-10-16 at 22 44 45" src="https://github.com/user-attachments/assets/cc303cfa-6358-4485-bc32-1da4d01c51c4" />
+<img width="639" height="183" alt="Screenshot 2026-10-16 at 22 44 11" src="https://github.com/user-attachments/assets/eec6b2b3-4531-4067-9edb-1906349f2e64" />
+
+
+
 ### Instructions for running the program
 0. Open MARS
 1. Connect Bitmap display from tools
