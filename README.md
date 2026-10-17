@@ -998,7 +998,7 @@ number_ones:
 5. Press the assemble button <img width="22" height="20" alt="Screenshot 2026-10-16 at 22 49 33" src="https://github.com/user-attachments/assets/493f0beb-73b5-4a4a-b507-f65da02a7d07" /> and Run <img width="30" height="35" alt="Screenshot 2026-10-16 at 22 50 38" src="https://github.com/user-attachments/assets/04d118c9-1cb4-448c-920a-724c4a731cef" />
 
    __*IMPORTANT: After connecting both tools to MIPS, press the reset button on the keyboard and display MMIO simulator, or it will not show anything in the bitmap display.*__
-6. Use the "Keyboard" in Keyboard and Display MMIO Simulator to start to play Tic Tac Toe!
+6. Use the "Keyboard" in Keyboard and Display MMIO Simulator to start to play Blackjack!
    
    Follow the instructions on screen to play!
    
