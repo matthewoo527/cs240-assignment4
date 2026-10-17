@@ -966,6 +966,14 @@ number_ones:
 
 ```
 
+### Screenshots of the graphic display
+
+<img width="700" height="405" alt="Screenshot 2026-10-17 at 15 11 01" src="https://github.com/user-attachments/assets/0ad8fe96-7a00-49db-baac-00c47c7531b3" />
+
+<img width="616" height="177" alt="Screenshot 2026-10-17 at 15 11 20" src="https://github.com/user-attachments/assets/f20b363e-b2ae-4ef2-b5f5-7bb43f8b5ae8" />
+
+<img width="705" height="679" alt="Screenshot 2026-10-17 at 15 11 14" src="https://github.com/user-attachments/assets/27fa47d8-97c1-452d-8677-d3ad31d19841" />
+
 
 
 
