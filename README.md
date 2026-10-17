@@ -1006,6 +1006,24 @@ number_ones:
 
 7. The goal of Blackjack is to get as close to 21 points as possible without going over. The player starts with two random cards and can press H to Hit (get another card) or S to Stand (stop getting cards). The dealer will keep drawing cards until reaching at least 17 points. If either player goes over 21, they lose. The player with the higher score without going over 21 wins. If both have the same score, the game ends in a tie.
 
+### Test Cases
+
+#### Three Normal Test Cases
+
+__Normal Cases 1__ 
+
+__Normal Cases 2__
+
+__Normal Cases 3__
+
+
+
+#### Two Edge Test Cases
+
+__Edge Case 1__
+
+
+__Edge Case 2__
 
 ## Snake
 ### Source Code
