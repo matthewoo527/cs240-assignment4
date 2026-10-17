@@ -409,6 +409,7 @@ no_win:
 #### Three Normal Cases
 __Normal Test Case 1__
 Player X wins horizontally
+
 <img width="705" height="676" alt="Screenshot 2026-10-17 at 12 47 35" src="https://github.com/user-attachments/assets/5a6ce77f-5ec4-4848-be04-b096bb20024b" />
 
 <img width="547" height="262" alt="Screenshot 2026-10-17 at 12 52 19" src="https://github.com/user-attachments/assets/dd4be9e8-3754-479f-aba0-fe185376c228" />
@@ -417,6 +418,7 @@ Player X wins horizontally
 
 __Normal Test Case 2__
 Player O wins vertically
+
 <img width="705" height="672" alt="Screenshot 2026-10-17 at 12 51 01" src="https://github.com/user-attachments/assets/946be572-ab4b-4769-aebc-9b91b7c3d354" />
 
 <img width="619" height="300" alt="Screenshot 2026-10-17 at 12 51 18" src="https://github.com/user-attachments/assets/4aee1e73-6b66-4e98-9613-86cda827e34f" />
@@ -426,23 +428,35 @@ Player O wins vertically
 __Normal Test Case 3__
 Game ends in a tie
 
+<img width="708" height="674" alt="Screenshot 2026-10-17 at 12 56 11" src="https://github.com/user-attachments/assets/92e998a3-a6bf-4056-8caa-6bef72b0be0d" />
 
+<img width="696" height="407" alt="Screenshot 2026-10-17 at 12 56 33" src="https://github.com/user-attachments/assets/7a280659-2072-48d4-9498-ef2a07823097" />
 
+<img width="546" height="340" alt="Screenshot 2026-10-17 at 12 56 26" src="https://github.com/user-attachments/assets/4a133529-fc70-4e11-862c-af2544a55fc4" />
+
+#### Two edge cases
 
 __Edge Case 1__
 Player selects an occupied cell
 
+It will ask the current player again:
 
+<img width="703" height="671" alt="Screenshot 2026-10-17 at 13 03 13" src="https://github.com/user-attachments/assets/c8a34c6c-f4e9-4507-a80e-1afd583444e1" />
+
+<img width="572" height="390" alt="Screenshot 2026-10-17 at 13 03 21" src="https://github.com/user-attachments/assets/8072df01-d0db-4b09-9507-3a420ef21116" />
+
+<img width="695" height="403" alt="Screenshot 2026-10-17 at 13 03 28" src="https://github.com/user-attachments/assets/0e59bca0-6214-47ec-bf59-95bad8d81078" />
 
 __Edge Case 2__
 Player enters an invalid position (0 or 10)
 
+It will ask the current player again:
 
+<img width="704" height="669" alt="Screenshot 2026-10-17 at 12 58 47" src="https://github.com/user-attachments/assets/c70ffd64-8d8e-47dd-86c0-6d812019f737" />
 
-#### Two edge cases
+<img width="538" height="408" alt="Screenshot 2026-10-17 at 12 58 56" src="https://github.com/user-attachments/assets/667656de-f1d7-42d5-86f5-9ced07e5df10" />
 
-
-
+<img width="697" height="406" alt="Screenshot 2026-10-17 at 12 59 05" src="https://github.com/user-attachments/assets/5c35d039-0e94-4e41-ae5d-e919d6c2e355" />
 
 ### Short design note explaining the game procedures
 
