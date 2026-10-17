@@ -1046,7 +1046,15 @@ __Edge Case 1__ Invalid inputs, some inputs besides h, H, s, or S.
 
 <img width="696" height="406" alt="Screenshot 2026-10-17 at 16 07 26" src="https://github.com/user-attachments/assets/0b32638d-8fa8-4596-bdb1-0895811a2ed4" />
 
-__Edge Case 2__
+__Edge Case 2__ Player Bust, Keep pressing H until the score goes above 21. 
+
+The player loses, and the program prints "Dealer wins!"
+
+<img width="711" height="675" alt="Screenshot 2026-10-17 at 16 09 42" src="https://github.com/user-attachments/assets/a1fa5947-b020-49e0-8874-bb25b3461680" />
+
+<img width="700" height="409" alt="Screenshot 2026-10-17 at 16 10 03" src="https://github.com/user-attachments/assets/468744fc-fc51-4742-bfc2-b4a0ab13c5ab" />
+
+<img width="711" height="675" alt="Screenshot 2026-10-17 at 16 09 42" src="https://github.com/user-attachments/assets/87b01145-3378-426a-959c-2e888f6dbdfa" />
 
 ## Snake
 ### Source Code
