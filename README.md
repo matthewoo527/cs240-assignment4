@@ -383,10 +383,15 @@ no_win:
 3. Connect Keyboard and Display MMIO Simulator
    
    <img width="309" height="301" alt="Screenshot 2026-10-16 at 22 47 15" src="https://github.com/user-attachments/assets/87e1ece6-41c3-4ab9-97e7-2a03c61bc9b2" />
-5. Press "Connect to MIPS" in both tools
+4. Press "Connect to MIPS" in both tools
    
    <img width="681" height="51" alt="Screenshot 2026-10-16 at 22 47 54" src="https://github.com/user-attachments/assets/beb79080-690a-42ac-a701-bc027681fbab" />
-7. Press the assemble button <img width="22" height="20" alt="Screenshot 2026-10-16 at 22 49 33" src="https://github.com/user-attachments/assets/493f0beb-73b5-4a4a-b507-f65da02a7d07" /> and Run <img width="30" height="35" alt="Screenshot 2026-10-16 at 22 50 38" src="https://github.com/user-attachments/assets/04d118c9-1cb4-448c-920a-724c4a731cef" />
+5. Press the assemble button <img width="22" height="20" alt="Screenshot 2026-10-16 at 22 49 33" src="https://github.com/user-attachments/assets/493f0beb-73b5-4a4a-b507-f65da02a7d07" /> and Run <img width="30" height="35" alt="Screenshot 2026-10-16 at 22 50 38" src="https://github.com/user-attachments/assets/04d118c9-1cb4-448c-920a-724c4a731cef" />
+6. Use the "Keyboard" in Keyboard and Display MMIO Simulator to start to play Tic Tac Toe!
+   
+   Follow the instructions on screen to play!
+   
+   <img width="820" height="228" alt="Screenshot 2026-10-16 at 22 55 39" src="https://github.com/user-attachments/assets/322f8a30-cc2a-40cb-8a4c-be8368fb87b6" />
 
 
 
