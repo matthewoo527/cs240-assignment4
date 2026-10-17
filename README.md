@@ -1,6 +1,6 @@
 # cs240-assignment4
 ## Tic Tac Toe
-## AI Disclosure: I used ChatGPT to help me get started. I also asked ChatGPT how to connect a bitmap display.
+AI Disclosure: I used ChatGPT to help me get started. I also asked ChatGPT how to connect a bitmap display.
 
 ### Source Code
 ```asm
