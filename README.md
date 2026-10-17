@@ -405,6 +405,8 @@ no_win:
    
    <img width="820" height="228" alt="Screenshot 2026-10-16 at 22 55 39" src="https://github.com/user-attachments/assets/322f8a30-cc2a-40cb-8a4c-be8368fb87b6" />
 
+7. Player 1 is X, and Player 2 is O. Player 1 starts first, and both players take turns choosing a position on the board. The first player to get three marks in a row horizontally, vertically, or diagonally wins the game. If the board is full and nobody wins, the game ends in a tie.
+   
 ### Test Cases
 #### Three Normal Cases
 __Normal Test Case 1__
@@ -974,7 +976,35 @@ number_ones:
 
 <img width="705" height="679" alt="Screenshot 2026-10-17 at 15 11 14" src="https://github.com/user-attachments/assets/27fa47d8-97c1-452d-8677-d3ad31d19841" />
 
+### Instructions for running the program
+0. Open MARS
+1. Connect Bitmap display from tools
 
+   <img width="303" height="24" alt="Screenshot 2026-10-16 at 22 46 06" src="https://github.com/user-attachments/assets/103333ee-cd9b-4190-8561-a690fc3808ab" />
+
+   
+   <img width="311" height="296" alt="Screenshot 2026-10-16 at 22 46 16" src="https://github.com/user-attachments/assets/630cc9d8-9e90-4d09-8c8b-bf8fa1d8c9c3" />
+
+   Make sure the Bitmap Display settings is correct:
+   
+   <img width="378" height="167" alt="Screenshot 2026-10-16 at 22 54 06" src="https://github.com/user-attachments/assets/dab055f5-0877-4775-ab83-ccf0908b8675" />
+
+3. Connect Keyboard and Display MMIO Simulator
+   
+   <img width="309" height="301" alt="Screenshot 2026-10-16 at 22 47 15" src="https://github.com/user-attachments/assets/87e1ece6-41c3-4ab9-97e7-2a03c61bc9b2" />
+4. Press "Connect to MIPS" in both tools
+   
+   <img width="681" height="51" alt="Screenshot 2026-10-16 at 22 47 54" src="https://github.com/user-attachments/assets/beb79080-690a-42ac-a701-bc027681fbab" />
+5. Press the assemble button <img width="22" height="20" alt="Screenshot 2026-10-16 at 22 49 33" src="https://github.com/user-attachments/assets/493f0beb-73b5-4a4a-b507-f65da02a7d07" /> and Run <img width="30" height="35" alt="Screenshot 2026-10-16 at 22 50 38" src="https://github.com/user-attachments/assets/04d118c9-1cb4-448c-920a-724c4a731cef" />
+
+   __*IMPORTANT: After connecting both tools to MIPS, press the reset button on the keyboard and display MMIO simulator, or it will not show anything in the bitmap display.*__
+6. Use the "Keyboard" in Keyboard and Display MMIO Simulator to start to play Tic Tac Toe!
+   
+   Follow the instructions on screen to play!
+   
+   <img width="820" height="228" alt="Screenshot 2026-10-16 at 22 55 39" src="https://github.com/user-attachments/assets/322f8a30-cc2a-40cb-8a4c-be8368fb87b6" />
+
+7. The goal of Blackjack is to get as close to 21 points as possible without going over. The player starts with two random cards and can press H to Hit (get another card) or S to Stand (stop getting cards). The dealer will keep drawing cards until reaching at least 17 points. If either player goes over 21, they lose. The player with the higher score without going over 21 wins. If both have the same score, the game ends in a tie.
 
 
 ## Snake
