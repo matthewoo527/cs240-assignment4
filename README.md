@@ -405,6 +405,29 @@ no_win:
 
 ### Test Cases
 #### Three Normal Cases
+__Normal Test Case 1__
+Player X wins horizontally
+
+
+
+__Normal Test Case 2__
+Player O wins vertically
+
+
+__Normal Test Case 3__
+Game ends in a tie
+
+
+
+__Edge Case 1__
+Player selects an occupied cell
+
+
+
+__Edge Case 2__
+Player enters an invalid position (0 or 10)
+
+
 
 #### Two edge cases
 
