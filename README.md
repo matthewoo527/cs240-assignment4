@@ -403,7 +403,15 @@ no_win:
    
    <img width="820" height="228" alt="Screenshot 2026-10-16 at 22 55 39" src="https://github.com/user-attachments/assets/322f8a30-cc2a-40cb-8a4c-be8368fb87b6" />
 
+### Test Cases
+#### Three Normal Cases
 
+#### Two edge cases
+
+
+
+
+### Short design note explaining the game procedures
 
 
 
