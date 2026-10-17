@@ -1010,9 +1010,21 @@ number_ones:
 
 #### Three Normal Test Cases
 
-__Normal Cases 1__ 
+__Normal Cases 1__ Stand, The player stops drawing cards. The dealer finishes their turn, and the game announces the winner.
 
-__Normal Cases 2__
+<img width="707" height="674" alt="Screenshot 2026-10-17 at 15 53 43" src="https://github.com/user-attachments/assets/e2fa92f7-c106-4df3-a3ae-c81eaa88b268" />
+
+<img width="545" height="246" alt="Screenshot 2026-10-17 at 15 54 01" src="https://github.com/user-attachments/assets/0a9a56a3-608c-4b22-a584-8c8cf6e7e39d" />
+
+<img width="694" height="405" alt="Screenshot 2026-10-17 at 15 53 50" src="https://github.com/user-attachments/assets/28b78de2-f78e-4008-9f1c-fcffd739770f" />
+
+__Normal Cases 2__ Hit, A new card appears on the Bitmap Display, and the player's score increases according to the card value.
+
+<img width="710" height="677" alt="Screenshot 2026-10-17 at 15 58 10" src="https://github.com/user-attachments/assets/cdea2f4f-52c0-40c3-ab64-afcdd2d03d4d" />
+
+<img width="537" height="245" alt="Screenshot 2026-10-17 at 15 57 53" src="https://github.com/user-attachments/assets/8d3a7819-378f-4423-b33f-8dfbf119f694" />
+
+<img width="701" height="411" alt="Screenshot 2026-10-17 at 15 58 02" src="https://github.com/user-attachments/assets/a6e4b228-69d3-4738-9790-227f6226076d" />
 
 __Normal Cases 3__
 
