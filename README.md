@@ -459,7 +459,11 @@ It will ask the current player again:
 <img width="697" height="406" alt="Screenshot 2026-10-17 at 12 59 05" src="https://github.com/user-attachments/assets/5c35d039-0e94-4e41-ae5d-e919d6c2e355" />
 
 ### Short design note explaining the game procedures
-
+This is a two-player tic-tac-toe game with human vs human. 
+The draw_line procedure draws the board and X/O symbols, while print_both displays messages in Run I/O and MMIO Display. 
+The check_win procedure checks if a player has won. 
+The program also uses an array to track occupied positions and a counter to check for a tie. 
+The game ends when a player wins or the board is full.
 
 
 
