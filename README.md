@@ -1026,14 +1026,25 @@ __Normal Cases 2__ Hit, A new card appears on the Bitmap Display, and the player
 
 <img width="701" height="411" alt="Screenshot 2026-10-17 at 15 58 02" src="https://github.com/user-attachments/assets/a6e4b228-69d3-4738-9790-227f6226076d" />
 
-__Normal Cases 3__
+__Normal Cases 3__ Dealer's turn, stand when dealer's score is below 17
 
+The dealer automatically draws cards until the score reaches at least 17, then the game announces the result.
 
+<img width="708" height="674" alt="Screenshot 2026-10-17 at 16 03 07" src="https://github.com/user-attachments/assets/78c44467-2082-47dc-b085-9de4413e3540" />
+
+<img width="528" height="246" alt="Screenshot 2026-10-17 at 16 02 46" src="https://github.com/user-attachments/assets/c9027044-b22c-4c7a-9cd6-47dcd1e2d619" />
+
+<img width="699" height="405" alt="Screenshot 2026-10-17 at 16 02 53" src="https://github.com/user-attachments/assets/22b622af-fcd2-4a19-b8b6-0a0263b46fca" />
 
 #### Two Edge Test Cases
 
-__Edge Case 1__
+__Edge Case 1__ Invalid inputs, some inputs besides h, H, s, or S.
 
+<img width="710" height="671" alt="Screenshot 2026-10-17 at 16 07 32" src="https://github.com/user-attachments/assets/e34aae75-a3b6-4baf-8777-d396406d22b7" />
+
+<img width="538" height="296" alt="Screenshot 2026-10-17 at 16 07 19" src="https://github.com/user-attachments/assets/2d9e931f-5ec8-47e5-9a46-2c58c75aa4b2" />
+
+<img width="696" height="406" alt="Screenshot 2026-10-17 at 16 07 26" src="https://github.com/user-attachments/assets/0b32638d-8fa8-4596-bdb1-0895811a2ed4" />
 
 __Edge Case 2__
 
