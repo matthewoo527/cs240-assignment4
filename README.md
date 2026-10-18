@@ -1686,14 +1686,27 @@ print_done:
 
 #### Three Normal Test Cases
 
-__Normal Cases 1__ 
+__Normal Cases 1__ Press Space to start the game, the start screen disappears, and the snake starts moving automatically.
 
-__Normal Cases 2__ 
 
-__Normal Cases 3__ 
+
+__Normal Cases 2__ Press W, A, S, D to change to change direction
+
+
+
+__Normal Cases 3__ Eat food, when the snake eat food, the score will add 1
 
 #### Two Edge Test Cases
 
-__Edge Case 1__ 
+__Edge Case 1__ Invalid input, press key other than W, A, S, D
 
-__Edge Case 2__ 
+
+
+__Edge Case 2__ The game should stop and display GAME OVER and the final score when the snake hit the wall.
+
+
+
+
+### Short design note explaining the game procedures
+
+
