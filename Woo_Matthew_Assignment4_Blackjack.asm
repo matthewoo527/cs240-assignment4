@@ -1,7 +1,7 @@
 #AI Disclosure: I used ChatGPT 6 to help me write the starter code and debug.
-#I also used ChatGPT 6 to learn how to draw the cards and the background
-#ChatGPT 6 also helped me to learn how to use the keyboard and display MMIO sim
-#and char allows in the MMIO simulatar
+#I also used ChatGPT 6 to learn how to draw the cards and the background.
+#ChatGPT 6 also helped me to learn how to use the keyboard and display MMIO simulator
+#and char allows in the MMIO simulator.
 
 .data
 screen:      .space 4096             # 32 rows x 32 columns x 4 bytes
