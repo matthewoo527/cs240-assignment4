@@ -1663,7 +1663,7 @@ print_done:
 
    Make sure the Bitmap Display settings is correct:
    
-   <img width="378" height="167" alt="Screenshot 2026-10-16 at 22 54 06" src="https://github.com/user-attachments/assets/dab055f5-0877-4775-ab83-ccf0908b8675" />
+   <img width="398" height="177" alt="Screenshot 2026-10-17 at 17 54 36" src="https://github.com/user-attachments/assets/7e9f4ebb-060b-42b6-9daf-71c216502cf8" />
 
 3. Connect Keyboard and Display MMIO Simulator
    
@@ -1678,9 +1678,9 @@ print_done:
    
    Follow the instructions on screen to play!
    
-   <img width="398" height="177" alt="Screenshot 2026-10-17 at 17 54 36" src="https://github.com/user-attachments/assets/7e9f4ebb-060b-42b6-9daf-71c216502cf8" />
+   <img width="820" height="228" alt="Screenshot 2026-10-16 at 22 55 39" src="https://github.com/user-attachments/assets/322f8a30-cc2a-40cb-8a4c-be8368fb87b6" />
 
-7. Press Space to start the Snake game. Use W to move up, A to move left, S to move down, and D to move right. Eat the red food to grow the snake and increase your score. Avoid hitting the walls or your own body. Press Q to quit. The game ends when the snake hits a wall or itself, and your final score will be displayed.
+8. Press Space to start the Snake game. Use W to move up, A to move left, S to move down, and D to move right. Eat the red food to grow the snake and increase your score. Avoid hitting the walls or your own body. Press Q to quit. The game ends when the snake hits a wall or itself, and your final score will be displayed.
 
 ### Test Cases
 
