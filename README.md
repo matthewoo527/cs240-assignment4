@@ -1637,3 +1637,16 @@ print_done:
     jr $ra
 
 ```
+
+### Screenshots of the graphic display
+
+<img width="916" height="406" alt="Screenshot 2026-10-17 at 17 46 35" src="https://github.com/user-attachments/assets/7351d72f-54ea-491e-8947-b565c1f0db23" />
+
+<img width="895" height="395" alt="Screenshot 2026-10-17 at 17 47 23" src="https://github.com/user-attachments/assets/72bef34f-eac8-4a8d-8e93-69dba1b6bb40" />
+
+<img width="919" height="409" alt="Screenshot 2026-10-17 at 17 46 45" src="https://github.com/user-attachments/assets/3c78e942-7995-4233-a6d1-e2b71dc0bbfa" />
+
+<img width="827" height="637" alt="Screenshot 2026-10-17 at 17 47 37" src="https://github.com/user-attachments/assets/a37cf5df-7a38-4820-b3c2-c0a3a9bdd759" />
+
+
+<img width="641" height="131" alt="Screenshot 2026-10-17 at 17 47 48" src="https://github.com/user-attachments/assets/0022cf5c-b36f-42a5-93d7-c7bc47b7a9de" />
