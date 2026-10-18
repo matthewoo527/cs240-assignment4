@@ -479,9 +479,9 @@ ChatGPT 6 also helped me to learn how to use the keyboard and display MMIO simul
 ### Source Code
 ```asm
 #AI Disclosure: I used ChatGPT 6 to help me write the starter code and debug.
-#I also used ChatGPT 6 to learn how to draw the cards and the background
-#ChatGPT 6 also helped me to learn how to use the keyboard and display MMIO sim
-#and char allows in the MMIO simulator
+#I also used ChatGPT 6 to learn how to draw the cards and the background.
+#ChatGPT 6 also helped me to learn how to use the keyboard and display MMIO simulator
+#and char allows in the MMIO simulator.
 
 .data
 screen:      .space 4096             # 32 rows x 32 columns x 4 bytes
@@ -1070,7 +1070,13 @@ The print_both procedure shows messages in Run I/O and MMIO Display.
 The dealer keeps drawing cards until reaching at least 17 points. 
 The game ends by comparing both scores to determine the winner.
 
-## Snake
+## [Snake](https://github.com/matthewoo527/cs240-assignment4/blob/main/Woo_Matthew_Assignment4_snake.asm)
+
+AI Disclosure: Used ChatGPT 6 to help me start the snake code.
+Then I asked ChatGPT to tell me what is each part doing and make it better and shorter.
+I also used ChatGPT 6 to help me make a "press space to start" and "Game Over" page.
+
+
 ### Source Code
 ```asm
 #AI Disclosure: Used ChatGPT 6 to help me start the snake code.
