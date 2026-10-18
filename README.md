@@ -1070,6 +1070,7 @@ The game ends by comparing both scores to determine the winner.
 ```asm
 #AI Disclosure: Used ChatGPT 6 to help me start the snake code.
 # Then I asked ChatGPT to tell me what is each part doing and make it better and shorter.
+#I also used ChatGPT 6 to help me make a "press space to start" and "Game Over" page
 
 # Bitmap Display: Unit 4x4, Display 256x256, base 0x10010000.
 # Keyboard and Display MMIO Simulator: connect before Run.
@@ -1081,6 +1082,7 @@ snake:  .word 8320, 8312, 8304    # Head and 2 body blocks
         .space 3108               # Space for 780 snake blocks total
 
 intro:   .asciiz "SNAKE! W/A/S/D move, Q quit. Eat red food.\n"
+startText: .asciiz "Press SPACE to start!\n"
 over:    .asciiz "GAME OVER!\n"
 quitMsg: .asciiz "Game stopped.\n"
 won:     .asciiz "You filled the board!\n"
@@ -1090,10 +1092,15 @@ scoreText: .asciiz "SCORE000\n"  # We change the last 3 digits as food is eaten
 # Each bitmap letter is 5 columns x 7 rows (35 characters).
 # '1' = colored pixel; '0' = background. Five letters followed by ten digits.
 letters:
+letterS:
     .ascii "01111100001000001110000010000111110" # S
+letterC:
     .ascii "01111100001000010000100001000001111" # C
+letterO:
     .ascii "01110100011000110001100011000101110" # O
+letterR:
     .ascii "11110100011000111110101001001010001" # R
+letterE:
     .ascii "11111100001000011110100001000011111" # E
 digits:
     .ascii "01110100011001110101110011000101110" # 0
@@ -1107,6 +1114,29 @@ digits:
     .ascii "01110100011000101110100011000101110" # 8
     .ascii "01110100011000101111000010000101110" # 9
 
+
+# Letters for the starting message
+letterP: .ascii "11110100011000111110100001000010000" # P
+letterA: .ascii "01110100011000111111100011000110001" # A
+letterT: .ascii "11111001000010000100001000010000100" # T
+
+# Addresses of the starting message letters (0 means end of line)
+.align 2
+startLine1: .word letterP, letterR, letterE, letterS, letterS, 0
+startLine2: .word letterS, letterP, letterA, letterC, letterE, 0
+startLine3: .word letterT, letterO, 0
+startLine4: .word letterS, letterT, letterA, letterR, letterT, 0
+
+# Letters for GAME OVER screen
+letterG: .ascii "01111100001000010111100011000101111" # G
+letterM: .ascii "10001110111010110101100011000110001" # M
+letterV: .ascii "10001100011000110001100010101000100" # V
+
+# The ending message uses the same drawing procedure as the start message
+.align 2
+gameOver1: .word letterG, letterA, letterM, letterE, 0   # GAME
+gameOver2: .word letterO, letterV, letterE, letterR, 0   # OVER
+
 .text
 .globl main
 main:
@@ -1118,7 +1148,21 @@ main:
     li $s5, 4256    # Food at row 8, column 20
     la $a0, intro
     jal print_both
+    la $a0, startText
+    jal print_both
     jal draw_scene
+    jal draw_start_message    # Draw starting message
+
+# WAIT_START: Wait until player presses Space
+wait_start:
+    li $t0, 0xFFFF0000
+    lw $t1, 0($t0)
+    andi $t1, $t1, 1      # Check if key is ready
+    beq $t1, $zero, wait_start
+    lw $t2, 4($t0)
+    li $t3, 32
+    bne $t2, $t3, wait_start
+    jal draw_scene        # Clear start message
 
 main_loop:
     li $v0, 32      # Pause 180 milliseconds (MARS syscall)
@@ -1144,6 +1188,11 @@ game_over:
 game_won:
     la $a0, won
 end_message:
+    addi $sp, $sp, -4
+    sw $a0, 0($sp)        # Save the ending message
+    jal draw_end_screen   # Show GAME OVER and score on Bitmap Display
+    lw $a0, 0($sp)        # Get ending message back
+    addi $sp, $sp, 4
     jal print_both
     la $a0, final
     jal print_both
@@ -1159,9 +1208,15 @@ read_key:
     li $v0, 0
     li $t0, 0xFFFF0000
     lw $t1, 0($t0)          # 0 = no key available
+    andi $t1, $t1, 1       # Check ready bit only
     beq $t1, $zero, key_done
     lw $t2, 4($t0)          # ASCII of key
-    ori $t2, $t2, 32       # Convert uppercase letters to lowercase
+    li $t3, 65             # ASCII A
+    blt $t2, $t3, check_key
+    li $t3, 90             # ASCII Z
+    bgt $t2, $t3, check_key
+    addi $t2, $t2, 32      # Convert uppercase letters to lowercase
+check_key:
     li $t3, 113            # q
     beq $t2, $t3, key_quit
     li $t3, 100            # d
@@ -1172,7 +1227,7 @@ read_key:
     beq $t2, $t3, left
     li $t3, 119            # w
     beq $t2, $t3, up
-    j key_done
+    j key_done             # Ignore other keys
 right:
     li $t3, 2
     beq $s0, $t3, key_done
@@ -1482,6 +1537,85 @@ no_pixel:
     addi $t0, $t0, 256    # Next bitmap row
     addi $t2, $t2, -1
     bne $t2, $zero, glyph_row
+    jr $ra
+
+# DRAW_START_MESSAGE: Draw PRESS SPACE TO START
+draw_start_message:
+    addi $sp, $sp, -4
+    sw $ra, 0($sp)
+
+    la $a0, startLine1       # PRESS
+    li $a1, 4164            # Row 16, column 17
+    jal draw_start_line
+    la $a0, startLine2       # SPACE
+    li $a1, 6724            # Row 26, column 17
+    jal draw_start_line
+    la $a0, startLine3       # TO
+    li $a1, 9320            # Row 36, column 26
+    jal draw_start_line
+    la $a0, startLine4       # START
+    li $a1, 11844           # Row 46, column 17
+    jal draw_start_line
+
+    lw $ra, 0($sp)
+    addi $sp, $sp, 4
+    jr $ra
+
+# DRAW_START_LINE: Draw one line of the message
+draw_start_line:
+    addi $sp, $sp, -12
+    sw $s6, 0($sp)
+    sw $s7, 4($sp)
+    sw $ra, 8($sp)
+    add $s6, $a0, $zero     # Letter addresses
+    add $s7, $a1, $zero     # Starting position
+
+start_letter_loop:
+    lw $a1, 0($s6)         # Next letter
+    beq $a1, $zero, start_line_done
+    add $a0, $s7, $zero
+    li $a2, 0x00FFFFFF     # White
+    jal draw_glyph
+    addi $s6, $s6, 4       # Next letter address
+    addi $s7, $s7, 24      # Next letter position
+    j start_letter_loop
+
+start_line_done:
+    lw $s6, 0($sp)
+    lw $s7, 4($sp)
+    lw $ra, 8($sp)
+    addi $sp, $sp, 12
+    jr $ra
+
+# DRAW_END_SCREEN: Show GAME OVER and the final SCORE on Bitmap Display.
+# Reuse draw_hud for score and draw_start_line for the letters.
+draw_end_screen:
+    addi $sp, $sp, -4
+    sw $ra, 0($sp)
+
+    # Clear the old snake and food from the display
+    la $t0, screen
+    li $t1, 4096
+    li $t2, 0x001A1A1A
+end_clear:
+    sw $t2, 0($t0)
+    addi $t0, $t0, 4
+    addi $t1, $t1, -1
+    bne $t1, $zero, end_clear
+
+    jal draw_hud            # Keep SCORE000 at the top
+    jal draw_border         # Keep the gray border
+
+    la $a0, gameOver1       # Draw GAME
+    li $a1, 5712            # Row 22, column 20
+    jal draw_start_line
+
+    la $a0, gameOver2       # Draw OVER
+    li $a1, 8784            # Row 34, column 20
+    jal draw_start_line
+
+    lw $ra, 0($sp)
+    addi $sp, $sp, 4
     jr $ra
 
 # PRINT_BOTH: String in $a0 -> Run I/O and MMIO text display.
