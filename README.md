@@ -1,4 +1,8 @@
-# cs240-assignment4
+# CS240 Assignment4
+
+Author: Matthew Woo
+Date: Oct 17, 2026
+
 ## [Tic Tac Toe](https://github.com/matthewoo527/cs240-assignment4/blob/main/Woo_Matthew_Assignment4_TicTacToe.asm)
 AI Disclosure: I used ChatGPT to help me get started. I also asked ChatGPT how to connect a bitmap display.
 
