@@ -1,5 +1,5 @@
 # cs240-assignment4
-## Tic Tac Toe
+## [Tic Tac Toe](https://github.com/matthewoo527/cs240-assignment4/blob/main/Woo_Matthew_Assignment4_TicTacToe.asm)
 AI Disclosure: I used ChatGPT to help me get started. I also asked ChatGPT how to connect a bitmap display.
 
 ### Source Code
@@ -470,13 +470,18 @@ The game ends when a player wins or the board is full.
 
 
 
-## Blackjack
+## [Blackjack](https://github.com/matthewoo527/cs240-assignment4/blob/main/Woo_Matthew_Assignment4_Blackjack.asm)
+
+AI Disclosure: I used ChatGPT 6 to help me write the starter code and debug.
+I also used ChatGPT 6 to learn how to draw the cards and the background.
+ChatGPT 6 also helped me to learn how to use the keyboard and display MMIO simulator and char allows in the MMIO simulator.
+
 ### Source Code
 ```asm
 #AI Disclosure: I used ChatGPT 6 to help me write the starter code and debug.
 #I also used ChatGPT 6 to learn how to draw the cards and the background
 #ChatGPT 6 also helped me to learn how to use the keyboard and display MMIO sim
-#and char allows in the MMIO simulatar
+#and char allows in the MMIO simulator
 
 .data
 screen:      .space 4096             # 32 rows x 32 columns x 4 bytes
