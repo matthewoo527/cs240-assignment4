@@ -1694,11 +1694,18 @@ __Normal Cases 1__ Press Space to start the game, the start screen disappears, a
 
 __Normal Cases 2__ Press W, A, S, D to change to change direction
 
+<img width="854" height="399" alt="Screenshot 2026-10-17 at 18 23 17" src="https://github.com/user-attachments/assets/dba06003-f469-406b-ae59-3e722feadfe7" />
+<img width="685" height="629" alt="Screenshot 2026-10-17 at 18 23 12" src="https://github.com/user-attachments/assets/db1aa9ee-1310-4854-85e6-32e7d6575158" />
 
-
+<img width="632" height="126" alt="Screenshot 2026-10-17 at 18 23 21" src="https://github.com/user-attachments/assets/baaf4995-7ed5-4197-ae65-72e0df2d6cb7" />
 
 __Normal Cases 3__ Eat food, when the snake eat food, the score will add 1
 
+<img width="632" height="126" alt="Screenshot 2026-10-17 at 18 23 21" src="https://github.com/user-attachments/assets/ca426375-78e2-48bc-acbb-8cca3ca30bfd" />
+
+<img width="822" height="632" alt="Screenshot 2026-10-17 at 18 25 24" src="https://github.com/user-attachments/assets/d13339b8-ff4f-45b3-af11-9205a2adbc6e" />
+
+<img width="636" height="134" alt="Screenshot 2026-10-17 at 18 25 35" src="https://github.com/user-attachments/assets/49289847-d09b-429e-bff3-d00b09d0036f" />
 #### Two Edge Test Cases
 
 __Edge Case 1__ Invalid input, press key other than W, A, S, D, the snake should ignore the key and keep moving
