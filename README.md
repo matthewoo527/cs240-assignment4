@@ -1056,6 +1056,15 @@ The player loses, and the program prints "Dealer wins!"
 
 <img width="711" height="675" alt="Screenshot 2026-10-17 at 16 09 42" src="https://github.com/user-attachments/assets/87b01145-3378-426a-959c-2e888f6dbdfa" />
 
+### Short design note explaining the game procedures
+This is a Blackjack game written in MIPS assembly. 
+The player can press H to Hit or S to Stand. 
+The deal procedure generates random cards and calculates the scores. 
+The draw_table, draw_card, and draw_label procedures display the table, cards, and player labels. 
+The print_both procedure shows messages in Run I/O and MMIO Display. 
+The dealer keeps drawing cards until reaching at least 17 points. 
+The game ends by comparing both scores to determine the winner.
+
 ## Snake
 ### Source Code
 ```asm
