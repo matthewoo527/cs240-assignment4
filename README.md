@@ -1725,5 +1725,4 @@ __Edge Case 2__ The game should stop and display GAME OVER and the final score w
 <img width="916" height="406" alt="Screenshot 2026-10-17 at 18 12 02" src="https://github.com/user-attachments/assets/d621b43a-b8d0-4ef1-8926-71c68179f2f7" />
 
 ### Short design note explaining the game procedures
-
-
+This is a simple sname game. The player presses Space to start and uses WASD to move the snake. The read_key procedure checks the keyboard, and move_snake moves the snake and checks if it hits anything. The new_food procedure creates random food, while draw_scene draws the game. The draw_hud procedure shows the score. The game ends when the snake hits a wall or itself, and the final score is displayed.
