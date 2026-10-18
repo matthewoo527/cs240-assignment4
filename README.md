@@ -1688,9 +1688,12 @@ print_done:
 
 __Normal Cases 1__ Press Space to start the game, the start screen disappears, and the snake starts moving automatically.
 
+<img width="823" height="635" alt="Screenshot 2026-10-17 at 18 10 16" src="https://github.com/user-attachments/assets/817faaf3-2b6d-467d-920e-001e80d32345" />
 
+<img width="922" height="402" alt="Screenshot 2026-10-17 at 18 10 35" src="https://github.com/user-attachments/assets/8d0b7ef0-f36f-4550-ba64-86af9db2a1a8" />
 
 __Normal Cases 2__ Press W, A, S, D to change to change direction
+
 
 
 
@@ -1698,14 +1701,21 @@ __Normal Cases 3__ Eat food, when the snake eat food, the score will add 1
 
 #### Two Edge Test Cases
 
-__Edge Case 1__ Invalid input, press key other than W, A, S, D
+__Edge Case 1__ Invalid input, press key other than W, A, S, D, the snake should ignore the key and keep moving
 
+<img width="821" height="638" alt="Screenshot 2026-10-17 at 18 14 39" src="https://github.com/user-attachments/assets/95dbb6f5-7072-4eb4-8900-b367245f332f" />
 
+<img width="537" height="130" alt="Screenshot 2026-10-17 at 18 14 54" src="https://github.com/user-attachments/assets/8a747249-5c98-4178-a8bc-743e136097d4" />
+
+<img width="904" height="404" alt="Screenshot 2026-10-17 at 18 14 44" src="https://github.com/user-attachments/assets/3647101a-8a9e-43ba-a646-615b410db7ef" />
 
 __Edge Case 2__ The game should stop and display GAME OVER and the final score when the snake hit the wall.
 
+<img width="826" height="638" alt="Screenshot 2026-10-17 at 18 12 11" src="https://github.com/user-attachments/assets/d68f34a0-5076-49a4-bbbb-8b3ae322bd22" />
 
+<img width="541" height="124" alt="Screenshot 2026-10-17 at 18 12 21" src="https://github.com/user-attachments/assets/fdf09fe1-d6e2-4160-a023-fe3e47582b24" />
 
+<img width="916" height="406" alt="Screenshot 2026-10-17 at 18 12 02" src="https://github.com/user-attachments/assets/d621b43a-b8d0-4ef1-8926-71c68179f2f7" />
 
 ### Short design note explaining the game procedures
 
